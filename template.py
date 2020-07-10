@@ -5,7 +5,7 @@ import boto3
 from botocore.exceptions import ClientError, ParamValidationError
 
 # Create AWS service client and set region
-sqs = boto3.client('s3', region_name='us-east-1')
+s3 = boto3.client('s3', region_name='us-east-1')
 
 
 # Main program
