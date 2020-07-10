@@ -4,8 +4,8 @@ import boto3
 # Load the exceptions for error handling
 from botocore.exceptions import ClientError, ParamValidationError
 
-# Create SQS client and set region
-sqs = boto3.client('sqs', region_name='us-east-1')
+# Create AWS service client and set region
+sqs = boto3.client('s3', region_name='us-east-1')
 
 
 # Main program
