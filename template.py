@@ -7,6 +7,7 @@ from botocore.exceptions import ClientError, ParamValidationError
 # Create AWS service client and set region
 s3 = boto3.client('s3', region_name='us-east-1')
 
+# Call the S3 service to get a list of buckets in the account
 def s3_list_buckets():
     try:
         data = s3.list_buckets()
